@@ -8,10 +8,10 @@ import threading
 # Create a reddit instance and login #Note: you should use an environment variable for the credentials if you are hosting on replit
 reddit = praw.Reddit(
     user_agent="Anti_Anon",
-    client_id="96hc68l4iXGqpLdVZUm14g",
-    client_secret="JQghf8yGPc-latpkgvRuj26V01JnQQ",
+    client_id="96hc68l4iXGXXXXXXXXXX",
+    client_secret="JQgXXXX-XXXXXXXXX",
     username="anti-anon-bot",
-    password="anti-anon"
+    password="XXXXX"
 )
 
 # Get all posts from r/AnonReddit if the author is not AnonBot
