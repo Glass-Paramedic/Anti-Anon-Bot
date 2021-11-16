@@ -16,7 +16,7 @@ reddit = praw.Reddit(
 
 # Get all posts from r/AnonReddit if the author is not AnonBot
 def posts():
-    for submission in reddit.subreddit("YOUGETTOBEAMOD").stream.submissions(skip_existing=True):
+    for submission in reddit.subreddit("AnonReddit").stream.submissions(skip_existing=True):
         try:
             if submission.author != "Anon-Bot":
                 title = submission.title
@@ -30,7 +30,7 @@ def posts():
             print(e)
 def comments():
     #Get all comments from r/AnonReddit if the author is not AnonBot
-    for comment in reddit.subreddit("YOUGETTOBEAMOD").stream.comments(skip_existing=True):
+    for comment in reddit.subreddit("AnonReddit").stream.comments(skip_existing=True):
         try:
             if comment.author != "Anon-Bot":
                 body = comment.body
